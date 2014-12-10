@@ -16,11 +16,9 @@ use strict;
 use Getopt::Long;
 use POSIX qw(strftime);
 
-my $tps = { year => "%Y", month => "%m", day => "%d", hour => "%H", minute => "%M", second => "%S", doy => "%j", dow => "%w" };
-my $MONTHS   = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
-my $DAYS     = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
-my $M_REGEXP = join("|", @$MONTHS);
-my $D_REGEXP = join("|",   @$DAYS);
+# Initialise arrays of months and days
+my $MONTHS = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"];
+my $DAYS   = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
 ################################################################################
 # MAIN BODY
 ################################################################################
